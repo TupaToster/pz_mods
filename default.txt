@@ -1,0 +1,38 @@
+VERSION = 1,
+
+mods
+{
+	mod = VFExpansion1,
+	mod = ProximityInventory,
+	mod = BB_CommonSense,
+	mod = MoreCLR_desc4mood,
+	mod = 92amgeneralM998,
+	mod = 92fordCVPI,
+	mod = 92nissanGTR,
+	mod = 93fordTaurus,
+	mod = 97bushmaster,
+	mod = 85merc,
+	mod = 86oshkoshP19A,
+	mod = 78amgeneralM35A2,
+	mod = BLTRandomZombies,
+	mod = 78amgeneralM49A2C,
+	mod = 78amgeneralM50A3,
+	mod = 78amgeneralM62,
+	mod = 67commando,
+	mod = damnlib,
+	mod = 90bmwE30,
+	mod = 84gageV300,
+	mod = 82jeepJ10,
+	mod = 82jeepJ10LFS,
+	mod = 82jeepJ10LFS_NoVanilla,
+	mod = 82jeepJ10t,
+	mod = 89fordBronco,
+	mod = 90fordF350ambulance,
+	mod = 91geoMetro,
+	mod = 93townCar,
+	mod = VVSR_Continued,
+}
+
+maps
+{
+}

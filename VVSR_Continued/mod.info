@@ -1,0 +1,7 @@
+name=Vanilla Vehicle Story Replacer (KI5 Cars) - Continued & Fixed
+id=VVSR_Continued
+description= Replaces vehicles in vanilla vehicle stories, such as police blockade, ambulance crash to KI5's.<LINE> <LINE>
+description=Incompatible with: <LINE>
+description=Standardized Vehicle Upgrades - Vanilla <LINE>
+poster=preview.png
+require=92fordCVPI,89fordBronco,90fordF350ambulance,91geoMetro,93townCar,82jeepJ10,82jeepJ10LFS

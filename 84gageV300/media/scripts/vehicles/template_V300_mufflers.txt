@@ -1,0 +1,82 @@
+module Base
+{
+	
+	model 84gageV300muffler0
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_exhaust0,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+        shader = vehiclewheel,
+		scale = 0.1,
+	}
+    model 84gageV300muffler1
+    {
+        mesh = vehicles/Vehicles_84gageV300_Body|v300_exhaust1,
+        texture = Vehicles/Vehicles_84gageV300_Interior,
+        shader = vehiclewheel,
+        scale = 0.1,
+    }
+
+	template vehicle V300Mufflers
+		{
+		part Muffler
+       		{
+
+                model V300Muffler0
+                    {
+                    	file = 84gageV300muffler0,
+                    }
+                model V300Muffler1
+                    {
+                        file = 84gageV300muffler1,
+                    }
+
+            area = SeatRearRight,
+            category = engine,
+            itemType = Base.V300MufflerLarge;Base.V300MufflerSmall,
+            mechanicRequireKey = false,
+
+            table install
+            {
+                items
+                {
+                    item
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+		        complete = V300.InstallComplete.Muffler,
+            }
+            table uninstall
+            {
+                items
+                {
+                    item
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.UninstallTest.Default,
+		      complete = V300.UninstallComplete.Muffler,
+            }
+            lua
+            {
+                create = V300.Create.Muffler,
+                init = V300.Init.Muffler,
+            }
+        }
+	}
+}
+

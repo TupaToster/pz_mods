@@ -1,0 +1,44 @@
+module Base
+{
+	template vehicle GEO91TrunkCompartment
+	{
+		part GEO91Trunk
+		{
+			category = bodywork,
+			area = TruckBed,
+			itemType = Base.91geoMetroTrunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			container
+			{
+				conditionAffectsCapacity = false,
+				test = GEO91.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part TruckBed
+		{
+			category = nodisplay,
+			area = TruckBed,
+			itemType = nil,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			container
+			{
+				conditionAffectsCapacity = false,
+				test = GEO91.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = DAMN.Create.Blank,
+			}
+		}
+
+	}
+
+}
+

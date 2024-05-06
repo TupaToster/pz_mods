@@ -1,0 +1,78 @@
+module Base
+{
+
+	model 92fordCVPISpare
+	{
+		mesh = vehicles/Vehicles_92fordCVPI_Body|vic92_spare,
+		texture = vehicles/Vehicles_92fordCVPI_Wheel,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	
+	template vehicle CVPI92SpareTires
+	{
+		part CVPI92SpareTire
+        	{
+
+			model CVPI92SpareTire
+				{
+                		file = 92fordCVPISpare,
+				}
+
+			category = Other,
+			area = TruckBed,
+			itemType = Base.fordCVPITire,
+			mechanicRequireKey = false,
+
+			table install
+			{
+                	items
+                	{
+                    	1
+                    		{
+                        	type = Base.Wrench,
+                        	count = 1,
+                        	keep = true,
+							equip = primary,
+                    		}
+                	}
+
+                	time = 750,
+                	skills = Mechanics:1,
+                	recipes = Basic Mechanics,
+                	door = TrunkDoor,
+                	test = Vehicles.InstallTest.Default,
+                	complete = CVPI92.InstallComplete.SpareTire,
+            		}
+
+            		table uninstall
+            		{
+                	items
+                	{
+                    	1
+                    		{
+			  				type = Base.Wrench,
+							count = 1,
+							keep = true,
+							equip = primary,
+                    		}
+                	}
+
+					time = 800,
+					skills = Mechanics:1,
+					recipes = Basic Mechanics,
+	            	test = Vehicles.UninstallTest.Default,
+	            	complete = CVPI92.UninstallComplete.SpareTire,
+
+            		}
+
+	            lua
+	            {
+				create = CVPI92.Create.SpareTire,
+				init = CVPI92.Init.SpareTire,
+				}
+		}
+	}
+}
+

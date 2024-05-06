@@ -1,0 +1,602 @@
+module Base
+{
+	model 84gageV300Windshield
+    {
+        mesh = vehicles/Vehicles_84gageV300_Body|v300_viewport_windshield,
+        shader = damn_vehicle_shader,
+        scale = 0.1,
+    }
+
+	model 84gageV300winDoorSide
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_viewport_door_side,
+		shader = damn_vehicle_shader,
+		static = FALSE,
+		scale = 0.1,
+		boneWeight = hatch_drive_bone 1.0,
+	}
+
+	model 84gageV300hatchGunner
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_hatch_gunner,
+		shader = damn_vehicle_noreflect_shader,
+		static = FALSE,
+		scale = 0.1,
+		boneWeight = hatch_gunner_bone 1.0,
+	}
+
+	model 84gageV300hatchDriver
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_hatch_driver,
+		shader = damn_vehicle_noreflect_shader,
+		static = FALSE,
+		scale = 0.1,
+	}
+
+	model 84gageV300winfl
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_viewport_fl,
+		shader = damn_vehicle_shader,
+		scale = 0.1,
+	}
+
+	model 84gageV300winfr
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_viewport_fr,
+		shader = damn_vehicle_shader,
+		scale = 0.1,
+	}
+
+	model 84gageV300winrl
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_viewport_rl,
+		shader = damn_vehicle_shader,
+		scale = 0.1,
+	}
+
+	model 84gageV300winrr
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_viewport_rr,
+		shader = damn_vehicle_shader,
+		scale = 0.1,
+	}
+
+	model 84gageV300winrd
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_viewport_hatch_rear_door,
+		shader = damn_vehicle_shader,
+		static = FALSE,
+		scale = 0.1,
+	}
+
+	model 84gageV300winrh
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_viewport_hatch_rear,
+		shader = damn_vehicle_shader,
+		static = FALSE,
+		scale = 0.1,
+	}
+
+    model 84gageV300winTurret
+    {
+        mesh = vehicles/Vehicles_84gageV300_Body|v300_viewports_fsv,
+        shader = damn_vehicle_shader,
+        scale = 0.1,
+    }
+
+    template vehicle V300Windshield
+	{
+
+        part Windshield
+        {
+            model windshieldFront4864
+            {
+            file = 84gageV300Windshield,
+            }
+            window
+            {
+            openable = false,
+            }
+            specificItem = false,
+            itemType = USMIL.LargeViewport0,
+            area = Engine,
+            category = bodywork,
+            mechanicRequireKey = false,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+			             equip = primary,
+                    }
+                }
+                time = 700,
+                skills = Mechanics:5,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 700,
+                  skills = Mechanics:5,
+                  recipes = Intermediate Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+
+    }
+
+    template vehicle V300HatchLids
+	{
+		part WindowDriverHatch
+		{
+			model windowFL667
+			{
+				file = 84gageV300hatchDriver,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = hatch_driver_opening,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+			category = door,
+			itemType = Base.V300DriverHatchLid,
+		}
+
+		part WindowGunnerHatch
+		{
+			model windowRL668
+			{
+				file = 84gageV300hatchGunner,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = hatch_gunner_opening,
+				animate = FALSE,
+			}
+
+			parent = DoorRearLeft,
+			area = SeatRearLeft,
+			category = door,
+			itemType = Base.V300TurretHatchLid,
+		}
+
+		part Window*
+		{
+			mechanicRequireKey = true,
+			window
+			{
+				openable = true,
+			}
+			table install
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 500,
+				skills = Mechanics:3,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Window,
+			}
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 500,
+				skills = Mechanics:3,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Default,
+			}
+			lua
+			{
+				create = Vehicles.Create.Window,
+				init = Vehicles.Init.Window,
+			}
+		}
+
+	}
+
+	template vehicle V300RearViewports
+	{
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = 84gageV300winfl,
+			}
+			specificItem = false,
+			area = SeatFrontLeft,
+			category = door,
+			itemType = USMIL.LargeViewport0,
+		}
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = 84gageV300winfr,
+			}
+			specificItem = false,
+			area = SeatFrontRight,
+			category = door,
+			itemType = USMIL.LargeViewport0,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = 84gageV300winrl,
+			}
+			specificItem = false,
+			area = SeatRearLeft,
+			category = door,
+			itemType = USMIL.LargeViewport0,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = 84gageV300winrr,
+			}
+			specificItem = false,
+			area = SeatRearRight,
+			category = door,
+			itemType = USMIL.LargeViewport0,
+		}
+
+		part Window*
+		{
+			mechanicRequireKey = true,
+			window
+			{
+				openable = false,
+			}
+			table install
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 500,
+				skills = Mechanics:3,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Window,
+			}
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 500,
+				skills = Mechanics:3,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Default,
+			}
+			lua
+			{
+				create = Vehicles.Create.Window,
+				init = Vehicles.Init.Window,
+			}
+		}
+	}
+
+	template vehicle V300DoorViewports
+	{
+
+		part DoorSideViewport
+		{
+			model DoorSideViewport
+				{
+				file = 84gageV300winDoorSide,
+				}
+				specificItem = false,
+				itemType = USMIL.LargeViewport0,
+				parent = DoorSide,
+				area = DoorSide,
+
+			category = door,
+			door
+			{
+				}
+				mechanicRequireKey = true,
+				table install
+				{
+					items
+					{
+						item
+						{
+							type = Base.Wrench,
+							count = 1,
+							keep = true,
+							equip = primary,
+						}
+					}
+					time = 700,
+					skills = Mechanics:4,
+					recipes = Intermediate Mechanics,
+					test = Vehicles.InstallTest.Default,
+					complete = Vehicles.InstallComplete.Door,
+					requireInstalled = DoorSide,
+				}
+				table uninstall
+				{
+					items
+					{
+						item
+						{
+							type = Base.Wrench,
+							count = 1,
+							keep = true,
+							equip = primary,
+						}
+					}
+					time = 700,
+					skills = Mechanics:4,
+					recipes = Intermediate Mechanics,
+					test = Vehicles.UninstallTest.Default,
+					complete = Vehicles.UninstallComplete.Door,
+				}
+
+				lua
+				{
+					create = Vehicles.Create.Door,
+					init = Vehicles.Init.Door,
+					use = Vehicles.Use.Door,
+				}
+			}
+
+		part DoorRearViewport
+		{
+
+			model V300DoorRearV
+			{
+				file = 84gageV300winrd,
+			}
+
+			parent = DoorHatch,
+			area = DoorRear,
+			specificItem = false,
+			itemType = USMIL.SmallViewport0,
+			mechanicRequireKey = true,
+			category = door,
+
+			door
+			{
+				}
+				mechanicRequireKey = true,
+				table install
+				{
+					items
+					{
+						item
+						{
+							type = Base.Wrench,
+							count = 1,
+							keep = true,
+							equip = primary,
+						}
+					}
+					time = 700,
+					skills = Mechanics:4,
+					recipes = Intermediate Mechanics,
+					test = Vehicles.InstallTest.Default,
+					complete = Vehicles.InstallComplete.Door,
+					requireInstalled = DoorHatch,
+				}
+				table uninstall
+				{
+					items
+					{
+						item
+						{
+							type = Base.Wrench,
+							count = 1,
+							keep = true,
+							equip = primary,
+						}
+					}
+					time = 700,
+					skills = Mechanics:4,
+					recipes = Intermediate Mechanics,
+					test = Vehicles.UninstallTest.Default,
+					complete = Vehicles.UninstallComplete.Door,
+				}
+
+				lua
+				{
+					create = Vehicles.Create.Door,
+					init = Vehicles.Init.Door,
+					use = Vehicles.Use.Door,
+				}
+			}
+
+		part TrunkDoorViewport
+		{
+
+			model V300TailgateV
+			{
+				file = 84gageV300winrh,
+			}
+
+			parent = TrunkDoor,
+			category = door,
+			area = TruckBed,
+			specificItem = false,
+			itemType = USMIL.SmallViewport0,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			door
+			{
+			}
+
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+				requireInstalled = TrunkDoor,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 1000,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+
+	}
+
+    template vehicle V300fsvViewports
+	{
+
+        part V300fsvViewports
+        {
+            model fsvViewports
+            {
+            file = 84gageV300winTurret,
+            }
+            window
+            {
+            openable = false,
+            }
+            specificItem = false,
+            itemType = USMIL.LargeViewportPack0,
+            area = TruckBed,
+            category = bodywork,
+            mechanicRequireKey = false,
+
+            table install
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 500,
+				skills = Mechanics:3,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Window,
+			}
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 500,
+				skills = Mechanics:3,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Default,
+			}
+			lua
+			{
+				create = Vehicles.Create.Window,
+				init = Vehicles.Init.Window,
+			}
+        }
+
+    }
+}
+

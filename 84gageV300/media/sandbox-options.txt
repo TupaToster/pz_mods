@@ -1,0 +1,5 @@
+VERSION = 1,
+
+option DAMN.AlLAV300Spawns = {
+	type = boolean, default = true, page = DAMN_Spawns, translation = DAMN_AlLAVSpawns,
+}

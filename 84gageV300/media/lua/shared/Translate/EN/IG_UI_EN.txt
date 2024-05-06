@@ -1,0 +1,45 @@
+IG_UI_EN = {
+
+	IGUI_VehicleName84gageV300apc = "'84 Cadillac Gage LAV-300 APC",
+	IGUI_VehicleName84gageV300fsv = "'84 Cadillac Gage LAV-300 FSV",
+
+	IGUI_VehiclePartSeatP1 = "Crew Seat",
+	IGUI_VehiclePartSeatP2 = "Crew Seat",
+	IGUI_VehiclePartSeatP3 = "Crew Seat",
+	IGUI_VehiclePartSeatP4 = "Crew Seat",
+	IGUI_VehiclePartSeatP5 = "Crew Seat",
+	IGUI_VehiclePartSeatP6 = "Crew Seat",
+	IGUI_VehiclePartSeatP7 = "Crew Seat",
+	IGUI_VehiclePartSeatP8 = "Crew Seat",
+	IGUI_VehiclePartSeatP9 = "Crew Seat",
+	IGUI_VehiclePartSeatP10 = "Crew Seat",
+
+	IGUI_VehiclePartWindowDriverHatch = "Driver's Hatch",
+	IGUI_VehiclePartWindowGunnerHatch = "Gunner's Hatch",
+
+	IGUI_VehiclePartDoorRearViewport = "Rear Door Viewport",
+	IGUI_VehiclePartTrunkDoorViewport = "Trunk Hatch Viewport",
+	IGUI_VehiclePartDoorSideViewport = "Side Door Viewport",
+	IGUI_VehiclePartV300fsvViewports = "Turret Viewports",
+	
+	IGUI_VehiclePartDoorSide = "Side Door",
+	IGUI_VehiclePartDoorHatch = "Rear Hatch Door",
+
+	IGUI_VehiclePartV300BrushGuards = "Front protection",
+
+	IGUI_VehiclePartV300FrontLightGuards = "Headlight Guards",
+	IGUI_VehiclePartV300RearLightGuards = "Taillight Guards",
+
+	IGUI_VehiclePartV300SpareTireOne = "Spare Tire",
+	IGUI_VehiclePartV300SpareTireTwo = "Spare Tire",
+
+	IGUI_VehiclePartV300GasCanOne = "Gas Can",
+	IGUI_VehiclePartV300GasCanTwo = "Gas Can",
+
+	IGUI_VehiclePartV300Crates = "Crate Storage",
+	IGUI_VehiclePartV300NettingLeft = "Left Net Storage",
+	IGUI_VehiclePartV300NettingRight = "Right Net Storage",
+	IGUI_VehiclePartV300Trunk = "Trunk Storage",
+	IGUI_VehiclePartV300EngineVent = "Engine Vent Lid",
+
+}

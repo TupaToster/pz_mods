@@ -1,0 +1,159 @@
+module Base
+
+{
+	recipe Make CVPI92 Tire
+	{
+		keep LugWrench,
+		OldTire1/NormalTire1/ModernTire1=2,
+		Glue=1,
+		Screws=1,
+
+		Result:fordCVPITire1,
+		Time:1000.0,
+		Category:CVPI92,
+		SkillRequired:Mechanics=4,
+		Prop1:LugWrench,
+		CanBeDoneFromFloor:true,
+	}
+
+	recipe Make CVPI92 Front Side Window
+	{
+		keep Scalpel,
+		FrontWindow1=1,
+
+		Result:92fordCVPIFrontSideWindow1,
+		Time:200.0,
+		Category:CVPI92,
+		SkillRequired:Mechanics=1,
+		Prop1:Scalpel,
+	}
+
+	recipe Make CVPI92 Rear Side Window
+	{
+		keep Scalpel,
+		RearWindow1=1,
+
+		Result:92fordCVPIRearSideWindow1,
+		Time:200.0,
+		Category:CVPI92,
+		SkillRequired:Mechanics=1,
+		Prop1:Scalpel,
+	}
+
+	recipe Make CVPI92 Windshield
+	{
+		keep Scalpel,
+		Windshield1=1,
+
+		Result:92fordCVPIWindshield1,
+		Time:350.0,
+		Category:CVPI92,
+		SkillRequired:Mechanics=1,
+		Prop1:Scalpel,
+	}
+
+	recipe Make CVPI92 Rear Windshield
+	{
+		keep Scalpel,
+		RearWindshield1=1,
+
+		Result:92fordCVPIRearWindshield1,
+		Time:450.0,
+		Category:CVPI92,
+		SkillRequired:Mechanics=1,
+		Prop1:Scalpel,
+	}
+
+	recipe Make CVPI92 Front Window Armor
+	{
+		BlowTorch=6,
+       	keep WeldingMask,
+		MetalPipe=3,
+		SheetMetal=3,
+		Screws=2,
+
+		Result:fordCVPIFrontWindowArmor,
+		Time:800.0,
+		Category:CVPI92,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	}
+
+	recipe Make CVPI92 Rear Window Armor
+	{
+		BlowTorch=6,
+      	keep WeldingMask,
+		MetalPipe=3,
+		SheetMetal=3,
+		Screws=2,
+
+		Result:fordCVPIRearWindowArmor,
+		Time:800.0,
+		Category:CVPI92,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	}
+
+	recipe Make CVPI92 Windshield Armor
+	{
+		BlowTorch=9,
+      	keep WeldingMask,
+		SmallSheetMetal=2,
+		SheetMetal=6,
+		Screws=2,
+		MetalPipe=4,
+
+		Result:fordCVPIWindshieldArmor,
+		Time:1000.0,
+		Category:CVPI92,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	}
+
+	recipe Make CVPI92 Rear Windshield Armor
+	{
+		BlowTorch=8,
+       	keep WeldingMask,
+		SmallSheetMetal=2,
+		SheetMetal=4,
+		Screws=2,
+		MetalPipe=3,
+
+		Result:fordCVPIWindshieldRearArmor,
+		Time:900.0,
+		Category:CVPI92,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	}
+
+	recipe Make CVPI92 Push Bumper
+	{
+		BlowTorch=5,
+       	keep WeldingMask,
+		SheetMetal=4,
+		Screws=2,
+		92fordCVPIBumperFront0=1,
+
+		Result:92fordCVPIBumperFront1,
+		Time:900.0,
+		Category:CVPI92,
+		SkillRequired:MetalWelding=5,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	}
+
+	recipe Make CVPI92 Push Bumper Mk2
+	{
+		BlowTorch=5,
+       	keep WeldingMask,
+		SheetMetal=4,
+		Screws=2,
+		92fordCVPIBumperFront0=1,
+
+		Result:92fordCVPIBumperFront2,
+		Time:900.0,
+		Category:CVPI92,
+		SkillRequired:MetalWelding=5,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	}
+
+}

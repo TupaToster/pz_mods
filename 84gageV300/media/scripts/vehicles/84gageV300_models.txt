@@ -1,0 +1,82 @@
+module Base
+{
+	model V300MufflerSmallWI
+	{
+		mesh = vehicles/Vehicles_84gageV300_Objects|v300_exhaust1WI,
+		texture = vehicles/Objects_84gageV300_Interior,
+		scale   = 0.6,
+	}
+	model V300MufflerLargeWI
+	{
+		mesh = vehicles/Vehicles_84gageV300_Objects|v300_exhaust0WI,
+		texture = vehicles/Objects_84gageV300_Interior,
+		scale   = 0.6,
+	}
+	model V300EngineDoorWI
+	{
+		mesh = vehicles/Vehicles_84gageV300_Objects|v300_hoodWI,
+		texture = vehicles/Objects_84gageV300apc_Shell,
+		scale   = 0.6,
+	}
+	model V300EngineVentLidWI
+	{
+		mesh = vehicles/Vehicles_84gageV300_Objects|v300_engineVent_frontWI,
+		texture = vehicles/Objects_84gageV300apc_Shell,
+		scale   = 0.6,
+	}
+	model V300RearHatchLidWI
+	{
+		mesh = vehicles/Vehicles_84gageV300_Objects|v300_hatch_rearWI,
+		texture = vehicles/Objects_84gageV300apc_Shell,
+		scale   = 0.6,
+	}
+	model V300RearDoorWI
+	{
+		mesh = vehicles/Vehicles_84gageV300_Objects|v300_hatch_rear_doorWI,
+		texture = vehicles/Objects_84gageV300apc_Shell,
+		scale   = 0.6,
+	}
+	model V300BrushGuardsWI
+	{
+		mesh = vehicles/Vehicles_84gageV300_Objects|v300_brushGuardsWI,
+		texture = vehicles/Objects_84gageV300apc_Shell,
+		scale   = 0.6,
+	}
+	model V300frontLightGuardsWI
+	{
+		mesh = vehicles/Vehicles_84gageV300_Objects|V300_headlight_guardsWI,
+		texture = vehicles/Objects_84gageV300apc_Shell,
+		scale   = 0.6,
+	}
+	model V300rearLightGuardsWI
+	{
+		mesh = vehicles/Vehicles_84gageV300_Objects|v300_rearlight_guardsWI,
+		texture = vehicles/Objects_84gageV300apc_Shell,
+		scale   = 0.6,
+	}
+	model V300DriverHatchLidWI
+	{
+		mesh = vehicles/Vehicles_84gageV300_Objects|v300_hatch_driverWI,
+		texture = vehicles/Objects_84gageV300apc_Shell,
+		scale   = 0.6,
+	}
+	model V300TurretHatchLidWI
+	{
+		mesh = vehicles/Vehicles_84gageV300_Objects|v300_hatch_gunnerWI,
+		texture = vehicles/Objects_84gageV300fsv_Shell,
+		scale   = 0.6,
+	}
+	model V300DriverHatchDoorWI
+	{
+		mesh = vehicles/Vehicles_84gageV300_Objects|v300_door_sideWI,
+		texture = vehicles/Objects_84gageV300apc_Shell,
+		scale   = 0.6,
+	}
+	model RoofCrateStorageWI
+	{
+		mesh = vehicles/Vehicles_84gageV300_Objects|v300_cratesWI,
+		texture = vehicles/Objects_USMIL_crate1_mil,
+		scale   = 0.6,
+	}
+}
+

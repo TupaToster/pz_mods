@@ -1,0 +1,343 @@
+module Base
+{
+	model 84gageV300seat_d
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_seat_d,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	model 84gageV300seat_p1
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_seat_p1,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	model 84gageV300seat_p2
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_seat_p2,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	model 84gageV300seat_p3
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_seat_p3,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	model 84gageV300seat_p4
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_seat_p4,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	model 84gageV300seat_p5
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_seat_p5,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	model 84gageV300seat_p6
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_seat_p6,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	model 84gageV300seat_p7
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_seat_p7,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	model 84gageV300seat_p8
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_seat_p8,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	model 84gageV300seat_p9
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_seat_p9,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	model 84gageV300seat_p10
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_seat_p10,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	template vehicle V300apcSeats
+	{
+		part SeatFrontLeft
+		{
+			
+			model SeatFL
+			{
+				file = 84gageV300seat_d,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+			
+			area = SeatFrontLeft,
+			container
+			{
+				seat = FrontLeft,
+			}
+		}
+
+		part SeatP1
+		{
+
+			model seatP1
+			{
+				file = 84gageV300seat_p1,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			area = DoorRear,
+			container
+			{
+				seat = P1,
+			}
+		}
+
+		part SeatP2
+		{
+
+			model seatP1
+			{
+				file = 84gageV300seat_p2,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			area = DoorRear,
+			container
+			{
+				seat = P2,
+			}
+		}
+
+		part SeatP3
+		{
+
+			model seatP3
+			{
+				file = 84gageV300seat_p3,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			area = DoorRear,
+			container
+			{
+				seat = P3,
+			}
+		}
+
+		part SeatP4
+		{
+
+			model seatP4
+			{
+				file = 84gageV300seat_p4,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			area = DoorRear,
+			container
+			{
+				seat = P4,
+			}
+		}
+
+		part SeatP5
+		{
+
+			model seatP5
+			{
+				file = 84gageV300seat_p5,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			area = DoorRear,
+			container
+			{
+				seat = P5,
+			}
+		}
+
+		part SeatP6
+		{
+
+			model seatP6
+			{
+				file = 84gageV300seat_p6,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			area = DoorRear,
+			container
+			{
+				seat = P6,
+			}
+		}
+
+		part SeatP7
+		{
+
+			model seatP7
+			{
+				file = 84gageV300seat_p7,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			area = DoorRear,
+			container
+			{
+				seat = P7,
+			}
+		}
+
+		part SeatP8
+		{
+
+			model seatP8
+			{
+				file = 84gageV300seat_p8,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			area = DoorRear,
+			container
+			{
+				seat = P8,
+			}
+		}
+
+		part SeatP9
+		{
+
+			model seatP9
+			{
+				file = 84gageV300seat_p9,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			area = DoorRear,
+			container
+			{
+				seat = P9,
+			}
+		}
+
+		part SeatP10
+		{
+
+			model seatP10
+			{
+				file = 84gageV300seat_p10,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			area = DoorRear,
+			container
+			{
+				seat = P10,
+			}
+		}
+
+		part Seat*
+		{
+			specificItem = false,
+			itemType = USMIL.Seat2,
+			category = seat,
+			mechanicRequireKey = true,
+			container
+			{
+				test = V300.ContainerAccess.BlankSeat,
+			}
+			table install
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:1,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+			}
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:1,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				requireEmpty = true,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+}
+

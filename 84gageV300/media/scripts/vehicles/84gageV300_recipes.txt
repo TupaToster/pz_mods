@@ -1,0 +1,217 @@
+module Base
+
+{
+	recipe Make Vehicle Muffler
+	{
+		BlowTorch=6,
+       	keep WeldingMask,
+		SheetMetal=2,
+		SmallSheetMetal=2,
+		Screws=2,
+
+		Result:V300MufflerSmall2,
+		Time:700.0,
+		Category:Mechanical,
+		NeedToBeLearn:true,
+		SkillRequired:MetalWelding=3,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	}
+
+	recipe Make Vehicle Muffler
+	{
+		BlowTorch=7,
+       	keep WeldingMask,
+		SheetMetal=3,
+		SmallSheetMetal=2,
+		Screws=2,
+
+		Result:V300MufflerLarge2,
+		Time:800.0,
+		Category:Mechanical,
+		NeedToBeLearn:true,
+		SkillRequired:MetalWelding=3,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	}
+
+	recipe Make Vehicle Hood
+	{
+		BlowTorch=5,
+       	keep WeldingMask,
+		SheetMetal=2,
+		damnCraft.RubberStrip,
+		damnCraft.HandleClassic,
+		damnCraft.HingeLarge=2,
+		Screws=2,
+
+		Result:V300EngineDoor2,
+		Time:800.0,
+		Category:Mechanical,
+		NeedToBeLearn:true,
+		SkillRequired:MetalWelding=3,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	}
+
+	recipe Make Vehicle Lid
+	{
+		BlowTorch=5,
+       	keep WeldingMask,
+		SheetMetal=3,
+		damnCraft.RubberStrip,
+		damnCraft.HandleClassic,
+		damnCraft.HingeLarge=2,
+		Screws=2,
+
+		Result:V300EngineVentLid2,
+		Time:800.0,
+		Category:Mechanical,
+		NeedToBeLearn:true,
+		SkillRequired:MetalWelding=3,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	}
+
+	recipe Make Vehicle Trunk Lid
+	{
+		BlowTorch=10,
+       	keep WeldingMask,
+		SheetMetal=8,
+		SmallSheetMetal=4,
+		damnCraft.RubberStrip=2,
+		damnCraft.HandleClassic,
+		damnCraft.HingeLarge=2,
+		Screws=4,
+
+		Result:V300RearHatchLid2,
+		Time:1500.0,
+		Category:Mechanical,
+		NeedToBeLearn:true,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	}
+
+	recipe Make Vehicle Door
+	{
+		BlowTorch=9,
+       	keep WeldingMask,
+		SheetMetal=4,
+		SmallSheetMetal=2,
+		damnCraft.RubberStrip=2,
+		damnCraft.HandleClassic,
+		damnCraft.HingeSmall=2,
+		Screws=3,
+
+		Result:V300RearDoor2,
+		Time:1200.0,
+		Category:Mechanical,
+		NeedToBeLearn:true,
+		SkillRequired:MetalWelding=5,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+	recipe Make Vehicle Bumper
+	{
+		BlowTorch=10,
+       	keep WeldingMask,
+		SheetMetal=6,
+		SmallSheetMetal=2,
+		Screws=4,
+
+		Result:V300BrushGuards2,
+		Time:1100.0,
+		Category:Mechanical,
+		SkillRequired:MetalWelding=4,
+		NeedToBeLearn:true,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+	recipe Make V300 Light Guards Front
+	{
+		BlowTorch=3,
+       	keep WeldingMask,
+		MetalPipe=3,
+		Screws=4,
+
+		Result:V300frontLightGuards2,
+		Time:500.0,
+		Category:Mechanical,
+		SkillRequired:MetalWelding=2,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	}
+
+	recipe Make V300 Light Guards Rear
+	{
+		BlowTorch=3,
+       	keep WeldingMask,
+		MetalPipe=3,
+		Screws=4,
+
+		Result:V300rearLightGuards2,
+		Time:500.0,
+		Category:Mechanical,
+		SkillRequired:MetalWelding=2,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	}
+
+	recipe Make Vehicle Hatch
+	{
+		BlowTorch=6,
+       	keep WeldingMask,
+		SheetMetal=2,
+		damnCraft.RubberStrip,
+		damnCraft.HandleClassic,
+		damnCraft.HingeSmall=2,
+		Screws=2,
+
+		Result:V300DriverHatchLid2,
+		Time:800.0,
+		Category:Mechanical,
+		NeedToBeLearn:true,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	}
+
+	recipe Make Vehicle Hatch
+	{
+		BlowTorch=6,
+       	keep WeldingMask,
+		SheetMetal=2,
+		damnCraft.RubberStrip,
+		damnCraft.HandleClassic,
+		damnCraft.HingeSmall=2,
+		Screws=2,
+
+		Result:V300TurretHatchLid2,
+		Time:800.0,
+		Category:Mechanical,
+		NeedToBeLearn:true,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	}
+
+	recipe Make Vehicle Door
+	{
+		BlowTorch=6,
+       	keep WeldingMask,
+		SheetMetal=2,
+		damnCraft.RubberStrip,
+		damnCraft.HandleClassic,
+		damnCraft.HingeSmall=2,
+		Screws=2,
+
+		Result:V300DriverHatchDoor2,
+		Time:800.0,
+		Category:Mechanical,
+		NeedToBeLearn:true,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+	recipe Make V300 Crate Storage
+	{
+		Crate0/Crate0military=2,
+
+		Result:RoofCrateStorage2,
+		Time:500.0,
+		Category:Mechanical,
+	}
+
+}

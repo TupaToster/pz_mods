@@ -1,0 +1,174 @@
+module Base
+{
+	fixing Fix V100Tire
+	{
+	   Require : V100Tire2,
+	   ConditionModifier : 0.45,
+
+      Fixer : DuctTape=2;Mechanics=2,
+      Fixer : Glue=2;Mechanics=2,
+	}
+
+	fixing Fix V103Tire
+	{
+	   Require : V103Tire2,
+	   ConditionModifier : 0.45,
+
+	   Fixer : DuctTape=2;Mechanics=2,
+      Fixer : Glue=2;Mechanics=2,
+	}
+
+	fixing Fix V103Axle
+	{
+	   Require : V103Axle2,
+	   ConditionModifier : 0.35,
+
+	   Fixer : DuctTape=2;Mechanics=2,
+      Fixer : Glue=2;Mechanics=2,
+	}
+
+	fixing Fix Car M35A2seat
+	{
+	   Require : M35A2CarSeat2,
+	   ConditionModifier : 0.5,
+
+       Fixer : DuctTape=2;Mechanics=1,
+	}
+	
+	fixing Fix M35A2Trunk Welding
+	{
+	   Require : M35A2Trunk2;M49A2CTrunk2,
+	   GlobalItem : BlowTorch=4,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+
+	fixing Fix M35A2Hood Welding
+	{
+	   Require : M35A2EngineDoor2,
+	   GlobalItem : BlowTorch=4,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+	}
+
+   fixing Fix M35A2Hood
+	{
+	   Require : M35A2EngineDoor2,
+	   GlobalItem : Screws=8,
+	   ConditionModifier : 0.5,
+
+       Fixer : SheetMetal; Mechanics=2,
+	}
+
+	fixing Fix M35A2Door Welding
+	{
+	   Require : M35A2Door2,
+	   GlobalItem : BlowTorch=3,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+
+	fixing Fix M35A2Flatbed Welding
+	{
+	   Require : M35A2Tarp1_Item;M35A2Tarp2_Item;M35A2Tarp3_Item,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.1,
+
+       Fixer : SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+
+	fixing Fix M35A2Bumper Welding
+    {
+       Require : M35A2Bumper1_Item,
+       GlobalItem : BlowTorch=5,
+       ConditionModifier : 1.1,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+    }
+
+    fixing Fix M35A2Grille Welding
+    {
+       Require : M35A2Grille1_Item,
+       GlobalItem : BlowTorch=1,
+       ConditionModifier : 1.1,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+    }
+
+    fixing Fix M35A2Tailgate Welding
+	{
+	   Require : M35A2tailgate2,
+	   GlobalItem : BlowTorch=3,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+	}
+
+   fixing Fix M35A2Tailgate
+	{
+	   Require : M35A2tailgate2,
+	   GlobalItem : Screws=8,
+	   ConditionModifier : 0.5,
+
+       Fixer : SheetMetal; Mechanics=2,
+	}
+
+	 fixing Fix M35A2hardcab Welding
+	{
+	   Require : M35A2HardCover1_Item,
+	   GlobalItem : BlowTorch=3,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+	}
+
+	fixing Fix Car M35A2softcab
+	{
+	   Require : M35A2SoftCover2_Item,
+	   ConditionModifier : 0.5,
+
+       Fixer : DuctTape=2;Mechanics=1,
+	}
+
+	fixing Fix M35A2WindshieldArmor Welding
+    {
+       Require : M35A2WindshieldArmor1_Item,
+       GlobalItem : BlowTorch=3,
+       ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+    }
+
+    fixing Fix M35A2DoorArmor Welding
+    {
+       Require : M35A2DoorArmor1_Item,
+       GlobalItem : BlowTorch=3,
+       ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+    }
+
+    fixing Fix M50A3 Water Tank Welding
+	{
+	   Require : 500_Water_Tank2,
+	   GlobalItem : BlowTorch=4,
+	   ConditionModifier : 0.7,
+
+	   Fixer : SheetMetal; MetalWelding=4;Mechanics=3,
+      Fixer : SmallSheetMetal=2; MetalWelding=4;Mechanics=3,
+	}
+
+}

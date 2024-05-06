@@ -1,0 +1,98 @@
+module Base
+{
+	fixing Fix TAU93 Tire
+	{
+	   Require : 93fordTaurusTire1;93fordTaurusSHOTire1,
+	   ConditionModifier : 0.45,
+
+      Fixer : DuctTape=2;Mechanics=2,
+      Fixer : Glue=2;Mechanics=2,
+	}
+
+	fixing Fix TAU93 Seat
+	{
+	   Require : 93fordTaurusSeatFront1;93fordTaurusSeatRear1,
+	   ConditionModifier : 0.5,
+
+       Fixer : DuctTape=2;Mechanics=1,
+	}
+	
+	fixing Fix TAU93 Trunk Welding
+	{
+	   Require : 93fordTaurusTrunkSedan1;93fordTaurusTrunkWagon1;93fordTaurusRoofrack1;93fordTaurusWagonRoofrack1,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+
+	fixing Fix TAU93 Hood Welding
+	{
+	   Require : 93fordTaurusEngineDoor1,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+	}
+
+   fixing Fix TAU93 Hood
+	{
+	   Require : 93fordTaurusEngineDoor1,
+	   GlobalItem : Screws=8,
+	   ConditionModifier : 0.5,
+
+       Fixer : SheetMetal; Mechanics=2,
+	}
+
+	fixing Fix TAU93 Trunk Lid Welding
+    {
+       Require : 93fordTaurusSedanTrunkDoor1;93fordTaurusWagonTrunkDoor1,
+       GlobalItem : BlowTorch=5,
+       ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+    }
+
+   fixing Fix TAU93 Trunk Lid
+	{
+      Require : 93fordTaurusSedanTrunkDoor1;93fordTaurusWagonTrunkDoor1,
+	   GlobalItem : Screws=8,
+	   ConditionModifier : 0.5,
+
+       Fixer : SheetMetal; Mechanics=2,
+	}
+
+	fixing Fix TAU93 Door Welding
+	{
+	   Require : 93fordTaurusFrontDoor1;93fordTaurusRearDoor1,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=3;Mechanics=3,
+       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=3,
+	}
+
+	fixing Fix TAU93 Bullbar Welding
+    {
+       Require : 93fordTaurusBumperFrontA;93fordTaurusSHOBumperFrontA;93fordTaurusBullbarFrontA,
+       GlobalItem : BlowTorch=8,
+       ConditionModifier : 1.0,
+
+       Fixer : SheetMetal; MetalWelding=4;Mechanics=4,
+       Fixer : SmallSheetMetal=2; MetalWelding=4;Mechanics=4,
+    }
+
+    fixing Fix TAU93 Bumpers
+	{
+      Require : 93fordTaurusBumperFront1;93fordTaurusSHOBumperFront1;93fordTaurusSedanBumperRear1;93fordTaurusSHOBumperRear1;93fordTaurusWagonBumperRear1,
+	   GlobalItem : Screws=8,
+	   ConditionModifier : 0.3,
+
+      Fixer : DuctTape=2;Mechanics=2,
+      Fixer : Glue=2;Mechanics=2,
+	}
+
+}

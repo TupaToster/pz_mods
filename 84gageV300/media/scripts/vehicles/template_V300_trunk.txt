@@ -1,0 +1,79 @@
+module Base
+{
+	template vehicle V300TrunkSpace
+	{
+		part V300Trunk
+		{
+			category = bodywork,
+			area = TruckBed,
+			itemType = Base.V300Trunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			container
+			{
+				conditionAffectsCapacity = false,
+				test = V300.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part V300NettingLeft
+		{
+			category = bodywork,
+			area = TruckBed,
+			itemType = Base.V300Netting,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			container
+			{
+				conditionAffectsCapacity = false,
+				test = V300.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part V300NettingRight
+		{
+			category = bodywork,
+			area = TruckBed,
+			itemType = Base.V300Netting,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			container
+			{
+				conditionAffectsCapacity = false,
+				test = V300.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part TruckBed
+		{
+			category = nodisplay,
+			area = TruckBed,
+			itemType = nil,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			container
+			{
+				conditionAffectsCapacity = false,
+				test = V300.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+			}
+		}
+
+	}
+
+}
+

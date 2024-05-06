@@ -1,0 +1,7 @@
+name=Vanilla Vehicle Story Replacer (KI5 Cars) - Fire Department
+id=VVSR_FD
+description= Replaces vanilla fire department vehicles with '93 Chevrolet Suburban and '90 Pierce Arrow Pumper.<LINE> <LINE>
+description=Incompatible with: <LINE>
+description=Standardized Vehicle Upgrades - Vanilla <LINE>
+poster=preview.png
+require=VVSR_Continued,93chevySuburban,90pierceArrow,damnlib

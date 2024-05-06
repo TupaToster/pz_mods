@@ -1,0 +1,1 @@
+ISCarMechanicsOverlay.CarList["Base.CarLightsPolice"] = ISCarMechanicsOverlay.CarList["Base.92fordCVPI"]

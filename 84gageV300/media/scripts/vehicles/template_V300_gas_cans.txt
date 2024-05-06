@@ -1,0 +1,109 @@
+module Base
+{
+	model 84gageV300GasCan
+    {
+        mesh = vehicles/Vehicles_84gageV300_Body|v300_gascan,
+		texture = Vehicles/Items_USMIL_gasCan0,
+		shader = vehiclewheel,
+		scale = 0.1,
+    }
+
+	template vehicle V300GasCans
+		{
+		part V300GasCanOne
+        	{
+
+			model GasCanOne
+				{
+                		file = 84gageV300GasCan,
+				}
+
+			model GasCanOneE
+				{
+                		file = 84gageV300GasCan,
+				}
+
+			area = SeatRearLeft,
+			category = Other,
+			specificItem = false,
+			itemType = USMIL.GasCan0;USMIL.emptyGasCan0,
+			mechanicRequireKey = false,
+
+			table install
+			{
+
+                	time = 200,
+                	skills = Mechanics:1,
+                	recipes = Basic Mechanics,
+                	test = Vehicles.InstallTest.Default,
+                	complete = V300.InstallComplete.GasCanOne,
+            		}
+
+            		table uninstall
+            		{
+
+					time = 200,
+					skills = Mechanics:1,
+					recipes = Basic Mechanics,
+                	test = Vehicles.UninstallTest.Default,
+					complete = V300.UninstallComplete.GasCanOne,
+            		}
+
+            		lua
+            		{
+						create = V300.Create.GasCanOne,
+						init = V300.Init.GasCanOne,
+					}
+		}
+
+		part V300GasCanTwo
+        	{
+
+			model GasCanTwo
+				{
+                		file = 84gageV300GasCan,
+                		offset = 0.0000 0.0000 -0.3600,
+				}
+
+			model GasCanTwoE
+				{
+                		file = 84gageV300GasCan,
+                		offset = 0.0000 0.0000 -0.3600,
+				}
+
+			area = SeatRearLeft,
+			category = Other,
+			specificItem = false,
+			itemType = USMIL.GasCan0;USMIL.emptyGasCan0,
+			mechanicRequireKey = false,
+
+			table install
+			{
+
+                	time = 200,
+                	skills = Mechanics:1,
+                	recipes = Basic Mechanics,
+                	test = Vehicles.InstallTest.Default,
+                	complete = V300.InstallComplete.GasCanTwo,
+            		}
+
+            		table uninstall
+            		{
+
+					time = 200,
+					skills = Mechanics:1,
+					recipes = Basic Mechanics,
+                	test = Vehicles.UninstallTest.Default,
+					complete = V300.UninstallComplete.GasCanTwo,
+            		}
+
+            		lua
+            		{
+						create = V300.Create.GasCanTwo,
+						init = V300.Init.GasCanTwo,
+					}
+		}
+	}
+
+		
+}

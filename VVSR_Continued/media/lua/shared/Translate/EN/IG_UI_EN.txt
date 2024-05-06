@@ -1,0 +1,16 @@
+IG_UI_EN = {
+
+IGUI_VehicleNameCarLights = "'82 Jeep J10 Ranger",
+IGUI_VehicleNameCarLightsPolice = "'92 Ford Crown Victoria Police Interceptor",
+IGUI_VehicleNameCarNormal = "'93 Lincoln Town Car",
+IGUI_VehicleNamePickUpTruckLightsFire = "'82 Jeep J10", 
+IGUI_VehicleNamePickUpTruckLights = "'82 Jeep J10",
+IGUI_VehicleNamePickUpTruck = "'82 Jeep J10",
+IGUI_VehicleNamePickUpVanLightsFire = "'82 Jeep J10",
+IGUI_VehicleNamePickUpVanLights = "'89 Ford Bronco Ranger",
+IGUI_VehicleNamePickUpVanLightsPolice = "'89 Ford Bronco Police",
+IGUI_VehicleNamePickUpVan = "'89 Ford Bronco",
+IGUI_VehicleNameSmallCar = "'91 Geo Metro",
+IGUI_VehicleNameVanAmbulance = "'90 Ford F350 Ambulance",
+
+}

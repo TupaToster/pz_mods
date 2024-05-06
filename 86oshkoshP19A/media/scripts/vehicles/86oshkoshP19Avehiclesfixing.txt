@@ -1,0 +1,85 @@
+module Base
+{
+	fixing Fix Tire
+	{
+	   Require : V100Tire2,
+	   ConditionModifier : 0.45,
+
+       Fixer : DuctTape=2;Mechanics=2,
+	}
+
+	fixing Fix Tire 1
+	{
+	   Require : V100Tire2,
+	   ConditionModifier : 0.45,
+
+       Fixer : Glue=2;Mechanics=2,
+	}
+
+	fixing Fix Car P19Aseat
+	{
+	   Require : P19ACarSeat2,
+	   ConditionModifier : 0.5,
+
+       Fixer : DuctTape=2;Mechanics=1,
+	}
+
+	fixing Fix P19ATrunk Welding
+	{
+	   Require : P19ABigTrunk2;P19ASmallTrunk2;P19ARoofrack1_Item,
+	   GlobalItem : BlowTorch=3,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+
+	fixing Fix P19AHood Welding
+	{
+	   Require : P19AEngineDoor2,
+	   GlobalItem : BlowTorch=3,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+	}
+
+    fixing Fix P19AHood
+	{
+	   Require : P19AEngineDoor2,
+	   GlobalItem : Screws=8,
+	   ConditionModifier : 0.5,
+
+       Fixer : SheetMetal; Mechanics=2,
+	}
+
+	fixing Fix P19ATrunk Lid Welding
+    {
+       Require : P19ATrunkDoor2,
+       GlobalItem : BlowTorch=3,
+       ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+    }
+
+    fixing Fix P19ATrunk Lid
+	{
+       Require : P19ATrunkDoor2,
+	   GlobalItem : Screws=8,
+	   ConditionModifier : 0.5,
+
+       Fixer : SheetMetal; Mechanics=2,
+	}
+
+	fixing Fix P19ADoor Welding
+	{
+	   Require : P19ACarFrontDoor2;P19ARoofHatch2,
+	   GlobalItem : BlowTorch=3,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+
+}

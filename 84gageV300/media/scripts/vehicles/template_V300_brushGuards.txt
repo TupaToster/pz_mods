@@ -1,0 +1,87 @@
+module Base
+{
+	model 84gageV300BrushGuards0
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_brushGuards,
+		shader = damn_vehicle_noreflect_shader,
+		scale = 0.1,
+	}
+	model 84gageV300BrushGuards1
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_spare_tire_zero,
+		texture = Vehicles/Wheels_runFlat_large,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	template vehicle V300BrushGuards
+		{
+		part V300BrushGuards
+        	{
+
+			model V300BrushGuards0
+				{
+                		file = 84gageV300BrushGuards0,
+				}
+
+			model V300BrushGuards1
+				{
+                		file = 84gageV300BrushGuards1,
+				}
+
+			area = Engine,
+			category = bodywork,
+			specificItem = false,
+			itemType = Base.V300BrushGuards2;runFlat.LargeTire,
+			mechanicRequireKey = false,
+
+			table install
+			{
+                	items
+                	{
+                    	1
+                    		{
+                        	type = Base.Wrench,
+                        	count = 1,
+                        	keep = true,
+				equip = primary,
+                    		}
+                	}
+
+                	time = 750,
+                	skills = Mechanics:3,
+                	recipes = Intermediate Mechanics,
+                	test = Vehicles.InstallTest.Default,
+                	complete = V300.InstallComplete.BrushGuards,
+            		}
+
+            		table uninstall
+            		{
+                	items
+                	{
+                    	1
+                    		{
+  				type = Base.Wrench,
+				count = 1,
+				keep = true,
+				equip = primary,
+                    		}
+                	}
+
+			time = 650,
+			skills = Mechanics:3,
+			recipes = Intermediate Mechanics,
+            test = Vehicles.UninstallTest.Default,
+			complete = V300.UninstallComplete.BrushGuards,
+            		}
+
+            		lua
+            		{
+			create = V300.Create.BrushGuards,
+			init = V300.Init.BrushGuards,
+			}
+		}
+	}
+
+		
+}

@@ -1,0 +1,1012 @@
+module Base
+{
+	template vehicle V300apcPassengers
+	{
+		passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.3444 -0.3556 1.1889,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.6556 -1.0667 0.4111,
+				rotate = 0.0000 0.0000 0.0000,
+				area = DoorSide,
+			}
+
+			door = DoorFrontLeft,
+			area = SeatFrontLeft,
+
+			switchSeat P1
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P2
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P3
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P4
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P5
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P6
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P7
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P8
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P9
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P10
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+		}
+
+		passenger P1
+		{
+			position inside
+			{
+				offset = 0.5222 -0.1778 -0.1667,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.6556 -1.0667 0.4111,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			door = DoorSide,
+			area = DoorSide,
+
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P2
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P3
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P4
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P5
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P6
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P7
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P8
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P9
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P10
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+		}
+
+		passenger P2
+		{
+			position inside
+			{
+				offset = -0.6333 -0.1778 -0.4222,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.0333 -1.0667 -3.4556,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			door = DoorHatch,
+			area = DoorHatch,
+
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P1
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P3
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P4
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P5
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P6
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P7
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P8
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P9
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P10
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+		}
+
+		passenger P3
+		{
+			position inside
+			{
+				offset = 0.5222 -0.1778 -0.7444,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.0333 -1.0667 -3.4556,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			door = DoorHatch,
+			area = DoorHatch,
+
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P1
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P2
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P4
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P5
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P6
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P7
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P8
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P9
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P10
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+		}
+
+		passenger P4
+		{
+			position inside
+			{
+				offset = -0.6333 -0.1778 -1.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.0333 -1.0667 -3.4556,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			door = DoorHatch,
+			area = DoorHatch,
+
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P1
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P2
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P3
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P5
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P6
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P7
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P8
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P9
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P10
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+		}
+
+		passenger P5
+		{
+			position inside
+			{
+				offset = 0.5222 -0.1778 -1.3000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.0333 -1.0667 -3.4556,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			door = DoorHatch,
+			area = DoorHatch,
+
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P1
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P2
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P3
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P4
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P6
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P7
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P8
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P9
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P10
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+		}
+
+		passenger P6
+		{
+			position inside
+			{
+				offset = -0.6333 -0.1778 -1.5556,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.0333 -1.0667 -3.4556,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			door = DoorHatch,
+			area = DoorHatch,
+
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P1
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P2
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P3
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P4
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P5
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P7
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P8
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P9
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P10
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+		}
+
+		passenger P7
+		{
+			position inside
+			{
+				offset = 0.5222 -0.1778 -1.8556,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.0333 -1.0667 -3.4556,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			door = DoorHatch,
+			area = DoorHatch,
+
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P1
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P2
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P3
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P4
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P5
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P6
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P8
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P9
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P10
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+		}
+
+		passenger P8
+		{
+			position inside
+			{
+				offset = -0.6333 -0.1778 -2.1111,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.0333 -1.0667 -3.4556,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			door = DoorHatch,
+			area = DoorHatch,
+
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P1
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P2
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P3
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P4
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P5
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P6
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P7
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P9
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P10
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+		}
+
+		passenger P9
+		{
+			position inside
+			{
+				offset = 0.5222 -0.1778 -2.4111,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.0333 -1.0667 -3.4556,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			door = DoorHatch,
+			area = DoorHatch,
+
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P1
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P2
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P3
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P4
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P5
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P6
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P7
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P8
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P10
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+		}
+
+		passenger P10
+		{
+			position inside
+			{
+				offset = -0.6333 -0.1778 -2.6667,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.0333 -1.0667 -3.4556,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			door = DoorHatch,
+			area = DoorHatch,
+
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P1
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P2
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P3
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P4
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P5
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P6
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P7
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P8
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+
+			switchSeat P9
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound =,
+			}
+		}
+
+		passenger *
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			anim enter
+			{
+				anim = Climb_WindowA,
+				rate = 0.33,
+			}
+
+			anim idle
+			{
+				anim = Idle,
+				rate = 1.0,
+			}
+
+			anim exit
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+			}
+
+			anim openDoor
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.3,
+			}
+
+			anim closeDoor
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+			}
+		}
+	}
+}
+

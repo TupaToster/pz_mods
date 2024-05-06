@@ -1,0 +1,141 @@
+module Base
+{
+	model 84gageV300lightguards_f
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|V300_headlight_guards,
+		shader = damn_vehicle_noreflect_shader,
+		scale = 0.1,
+	}
+
+	model 84gageV300lightguards_r
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_rearlight_guards,
+		shader = damn_vehicle_noreflect_shader,
+		scale = 0.1,
+	}
+
+	template vehicle V300LightGuards
+		{
+		part V300FrontLightGuards
+        	{
+
+			model V300LG0
+				{
+                		file = 84gageV300lightguards_f,
+				}
+
+			area = Engine,
+			category = lights,
+			itemType = Base.V300frontLightGuards,
+			mechanicRequireKey = false,
+
+			table install
+			{
+                	items
+                	{
+                    	1
+                    		{
+                        	type = Base.Wrench,
+                        	count = 1,
+                        	keep = true,
+				equip = primary,
+                    		}
+                	}
+
+                	time = 750,
+                	skills = Mechanics:3,
+                	recipes = Intermediate Mechanics,
+                	test = Vehicles.InstallTest.Default,
+                	complete = V300.InstallComplete.FrontLightGuards,
+            		}
+
+            		table uninstall
+            		{
+                	items
+                	{
+                    	1
+                    		{
+  				type = Base.Wrench,
+				count = 1,
+				keep = true,
+				equip = primary,
+                    		}
+                	}
+
+			time = 650,
+			skills = Mechanics:3,
+			recipes = Intermediate Mechanics,
+            test = Vehicles.UninstallTest.Default,
+			complete = V300.UninstallComplete.FrontLightGuards,
+            		}
+
+            		lua
+            		{
+			create = V300.Create.FrontLightGuards,
+			init = V300.Init.FrontLightGuards,
+			}
+		}
+
+		part V300RearLightGuards
+        	{
+
+			model V300LG1
+				{
+                		file = 84gageV300lightguards_r,
+				}
+
+			area = TruckBed,
+			category = lights,
+			itemType = Base.V300rearLightGuards,
+			mechanicRequireKey = false,
+
+			table install
+			{
+                	items
+                	{
+                    	1
+                    		{
+                        	type = Base.Wrench,
+                        	count = 1,
+                        	keep = true,
+				equip = primary,
+                    		}
+                	}
+
+                	time = 750,
+                	skills = Mechanics:3,
+                	recipes = Intermediate Mechanics,
+                	test = Vehicles.InstallTest.Default,
+                	complete = V300.InstallComplete.RearLightGuards,
+            		}
+
+            		table uninstall
+            		{
+                	items
+                	{
+                    	1
+                    		{
+  				type = Base.Wrench,
+				count = 1,
+				keep = true,
+				equip = primary,
+                    		}
+                	}
+
+			time = 650,
+			skills = Mechanics:3,
+			recipes = Intermediate Mechanics,
+            test = Vehicles.UninstallTest.Default,
+			complete = V300.UninstallComplete.RearLightGuards,
+            		}
+
+            		lua
+            		{
+			create = V300.Create.RearLightGuards,
+			init = V300.Init.RearLightGuards,
+			}
+		}
+	}
+
+		
+}

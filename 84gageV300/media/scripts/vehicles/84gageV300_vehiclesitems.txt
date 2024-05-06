@@ -1,0 +1,214 @@
+module Base
+{
+
+	/************************ Trunks ************************/
+
+	item V300Trunk2
+    {
+	   DisplayCategory = VehicleMaintenance,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Trunk,
+        Icon	=	na,
+        MaxCapacity = 205,
+        ConditionAffectsCapacity = false,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 20,
+        MechanicsItem = TRUE,
+    }
+
+    item V300Netting2
+    {
+       DisplayCategory = VehicleMaintenance,
+        Weight  =   0.1,
+        Type    =   Normal,
+        DisplayName =   Trunk,
+        Icon    =   na,
+        MaxCapacity = 50,
+        ConditionAffectsCapacity = false,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 20,
+        MechanicsItem = TRUE,
+    }
+
+    item RoofCrateStorage2
+    {
+       DisplayCategory = VehicleMaintenance,
+        Weight  =   15.0,
+        Type    =   Normal,
+        DisplayName =   Roof Crate Storage,
+        Icon    =   V300_crates,
+        MaxCapacity = 30,
+        ConditionAffectsCapacity = false,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 20,
+        MechanicsItem = TRUE,
+        WorldStaticModel = RoofCrateStorageWI,
+    }
+
+    /************************ Muffler ************************/
+
+      item V300MufflerSmall2
+      {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   4.0,
+        Type    =   Normal,
+        DisplayName =   V300 Small Muffler,
+        Icon    =   V300_muffs,
+        EngineLoudness = 100,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.04,
+        MechanicsItem = TRUE,
+        WorldStaticModel = V300MufflerSmallWI,
+      }
+
+      item V300MufflerLarge2
+      {
+        DisplayCategory = VehicleMaintenance,
+        Weight  =   6.0,
+        Type    =   Normal,
+        DisplayName =   V300 Large Muffler,
+        Icon    =   V300_muffb,
+        EngineLoudness = 120,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.04,
+        MechanicsItem = TRUE,
+        WorldStaticModel = V300MufflerLargeWI,
+      }
+
+
+    /************************ Hood ************************/
+
+    item V300EngineDoor2
+    {
+	   DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	V300 Hood,
+        Icon	=	V300_hood,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = V300EngineDoorWI,
+    }
+
+    item V300EngineVentLid2
+    {
+       DisplayCategory = VehicleMaintenance,
+        Weight  =   15.0,
+        Type    =   Normal,
+        DisplayName =   V300 Vent Lid,
+        Icon    =   V300_vent,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = V300EngineVentLidWI,
+    }
+
+    /************************ Trunk Lid ************************/
+
+    item V300RearHatchLid2
+    {
+    DisplayCategory = VehicleMaintenance,
+        Weight  =   25.0,
+        Type    =   Normal,
+        DisplayName =   V300 Rear Hatch Lid,
+        Icon    =   V300_rearh,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = V300RearHatchLidWI,
+    }
+
+    item V300RearDoor2
+    {
+    DisplayCategory = VehicleMaintenance,
+        Weight  =   25.0,
+        Type    =   Normal,
+        DisplayName =   V300 Rear Door,
+        Icon    =   V300_reard,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = V300RearDoorWI,
+    }
+
+     /************************ Guards ************************/
+
+	item V300BrushGuards2
+      {
+	   DisplayCategory = VehicleMaintenance,
+        Weight	=	30.0,
+        Type	=	Normal,
+        DisplayName	=	V300 Brush Guards,
+        Icon	=	V300_brush,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = V300BrushGuardsWI,
+      }
+
+    item V300frontLightGuards2
+      {
+       DisplayCategory = VehicleMaintenance,
+        Weight  =   30.0,
+        Type    =   Normal,
+        DisplayName =   V300 Front Light Guards,
+        Icon    =   V300_guardsf,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = V300frontLightGuardsWI,
+      }
+
+      item V300rearLightGuards2
+      {
+       DisplayCategory = VehicleMaintenance,
+        Weight  =   30.0,
+        Type    =   Normal,
+        DisplayName =   V300 Rear Light Guards,
+        Icon    =   V300_guardsr,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = V300rearLightGuardsWI,
+      }
+
+    /************************ Doors ************************/
+
+    item V300DriverHatchLid2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  = 5.0,
+        Type  = Normal,
+        DisplayName = V300 Driver's Hatch Lid,
+        Icon  = V300_win_fl,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = V300DriverHatchLidWI,
+    }
+
+    item V300TurretHatchLid2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  = 5.0,
+        Type  = Normal,
+        DisplayName = V300 Turret Hatch Lid,
+        Icon  = V300_win_rl,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = V300TurretHatchLidWI,
+    }
+
+    item V300DriverHatchDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight  = 15.0,
+        Type  = Normal,
+        DisplayName = V300 Driver's Hatch Door,
+        Icon  = V300_door_fl,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = V300DriverHatchDoorWI,
+    }
+
+}

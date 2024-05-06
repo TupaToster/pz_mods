@@ -1,0 +1,6 @@
+IG_UI_EN = {
+
+IGUI_VehicleNamePickUpTruckLightsFire = "'93 Chevrolet Suburban Fire Chief", 
+IGUI_VehicleNamePickUpVanLightsFire = "'90 Pierce Arrow Pumper",
+
+}

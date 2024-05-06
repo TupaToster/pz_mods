@@ -1,0 +1,167 @@
+module Base
+{
+	model 84gageV300SpareTireOne
+    {
+        mesh = vehicles/Vehicles_84gageV300_Body|v300_spare_tire_one,
+		texture = Vehicles/Wheels_runFlat_large,
+		shader = vehiclewheel,
+		scale = 0.1,
+    }
+    model 84gageV300SpareStrapOne
+    {
+        mesh = vehicles/Vehicles_84gageV300_Body|v300_spare_strap_one,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+		shader = vehiclewheel,
+		scale = 0.1,
+    }
+    model 84gageV300SpareTireTwo
+    {
+        mesh = vehicles/Vehicles_84gageV300_Body|v300_spare_tire_two,
+		texture = Vehicles/Wheels_runFlat_large,
+		shader = vehiclewheel,
+		scale = 0.1,
+    }
+    model 84gageV300SpareStrapTwo
+    {
+        mesh = vehicles/Vehicles_84gageV300_Body|v300_spare_strap_two,
+		texture = Vehicles/Vehicles_84gageV300_Interior,
+		shader = vehiclewheel,
+		scale = 0.1,
+    }
+
+	template vehicle V300SpareTires
+		{
+		part V300SpareTireOne
+        	{
+
+			model SpareTire7833783
+				{
+                		file = 84gageV300SpareTireOne,
+				}
+
+			model SpareStrap7833783
+				{
+                		file = 84gageV300SpareStrapOne,
+				}
+
+			area = TireRearLeft,
+			category = Other,
+			specificItem = false,
+			itemType = runFlat.LargeTire,
+			mechanicRequireKey = false,
+
+			table install
+			{
+                	items
+                	{
+                    	1
+                    		{
+                        	type = Base.Screwdriver,
+                        	count = 1,
+                        	keep = true,
+				equip = primary,
+                    		}
+                	}
+
+                	time = 1100,
+                	skills = Mechanics:4,
+                	recipes = Intermediate Mechanics,
+                	test = Vehicles.InstallTest.Default,
+                	complete = V300.InstallComplete.SpareTireOne,
+            		}
+
+            		table uninstall
+            		{
+                	items
+                	{
+                    	1
+                    		{
+  				type = Base.Screwdriver,
+				count = 1,
+				keep = true,
+				equip = primary,
+                    		}
+                	}
+
+			time = 1100,
+			skills = Mechanics:4,
+			recipes = Intermediate Mechanics,
+                	test = Vehicles.UninstallTest.Default,
+			complete = V300.UninstallComplete.SpareTireOne,
+            		}
+
+            		lua
+            		{
+			create = V300.Create.SpareTireOne,
+			init = V300.Init.SpareTireOne,
+			}
+		}
+
+		part V300SpareTireTwo
+        	{
+
+			model SpareTire786473
+				{
+                		file = 84gageV300SpareTireTwo,
+				}
+			model SpareStrap786473
+				{
+                		file = 84gageV300SpareStrapTwo,
+				}
+
+			area = TruckBed,
+			category = Other,
+			specificItem = false,
+			itemType = runFlat.LargeTire,
+			mechanicRequireKey = false,
+
+			table install
+			{
+                	items
+                	{
+                    	1
+                    		{
+                        	type = Base.Screwdriver,
+                        	count = 1,
+                        	keep = true,
+				equip = primary,
+                    		}
+                	}
+
+                	time = 1100,
+                	skills = Mechanics:4,
+                	recipes = Intermediate Mechanics,
+                	test = Vehicles.InstallTest.Default,
+                	complete = V300.InstallComplete.SpareTireTwo,
+            		}
+
+            		table uninstall
+            		{
+                	items
+                	{
+                    	1
+                    		{
+  				type = Base.Screwdriver,
+				count = 1,
+				keep = true,
+				equip = primary,
+                    		}
+                	}
+
+			time = 1100,
+			skills = Mechanics:4,
+			recipes = Intermediate Mechanics,
+                	test = Vehicles.UninstallTest.Default,
+			complete = V300.UninstallComplete.SpareTireTwo,
+            		}
+
+            		lua
+            		{
+			create = V300.Create.SpareTireTwo,
+			init = V300.Init.SpareTireTwo,
+			}
+		}
+	}
+
+		
+}

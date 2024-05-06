@@ -1,0 +1,111 @@
+module Base
+{
+
+	model 84gageV300engineVent
+	{
+		mesh = vehicles/Vehicles_84gageV300_Body|v300_engineVent_front,
+		shader = damn_vehicle_noreflect_shader,
+		static = FALSE,
+		scale = 0.1,
+	}
+
+	template vehicle V300EngineVent
+	{
+		part V300EngineVent
+		{
+
+			model vent611815
+			{
+				file = 84gageV300engineVent,
+			}
+
+			anim Close
+			{
+				anim = engineVent_opening,
+				reverse = TRUE,
+				rate = 0.35,
+			}
+
+			anim Open
+			{
+				anim = engineVent_opening,
+				rate = 0.35,
+			}
+
+			anim Closed
+			{
+				anim = engineVent_opening,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = engineVent_opening,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		
+			category = bodywork,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleHoodOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleHoodOpenStandard,
+			}
+
+			itemType = Base.V300EngineVentLid,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			area = Engine,
+			table install
+			{
+				items
+				{
+					1
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 700,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 700,
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.EngineDoor,
+				use = Vehicles.Use.EngineDoor,
+			}
+		}
+	}
+}
+

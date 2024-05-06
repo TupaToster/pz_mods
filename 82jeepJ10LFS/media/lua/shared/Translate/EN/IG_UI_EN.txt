@@ -1,0 +1,6 @@
+IG_UI_EN = {
+	IGUI_VehicleName82jeepJ10Fire = "'82 Jeep J10"
+	IGUI_VehicleName82jeepJ10Fossoil = "'82 Jeep J10"
+	IGUI_VehicleName82jeepJ10Mccoy = "'82 Jeep J10"
+}
+
