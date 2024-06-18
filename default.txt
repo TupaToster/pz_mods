@@ -2,7 +2,6 @@ VERSION = 1,
 
 mods
 {
-	mod = VFExpansion1,
 	mod = ProximityInventory,
 	mod = BB_CommonSense,
 	mod = MoreCLR_desc4mood,
@@ -12,7 +11,6 @@ mods
 	mod = 93fordTaurus,
 	mod = 97bushmaster,
 	mod = 85merc,
-	mod = 86oshkoshP19A,
 	mod = 78amgeneralM35A2,
 	mod = BLTRandomZombies,
 	mod = 78amgeneralM49A2C,
@@ -31,6 +29,14 @@ mods
 	mod = 91geoMetro,
 	mod = 93townCar,
 	mod = VVSR_Continued,
+	mod = BecomeDesensitized,
+	mod = modoptions,
+	mod = ADVANCEDGEAR,
+	mod = PlayerTraps,
+	mod = Arsenal(26)GunFighter[MAIN MOD 2.0],
+	mod = Brita,
+	mod = 86oshkoshP19A,
+	mod = SkillRecoveryJournal,
 }
 
 maps

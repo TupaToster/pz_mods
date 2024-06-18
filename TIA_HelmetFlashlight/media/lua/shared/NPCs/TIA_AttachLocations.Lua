@@ -1,0 +1,5 @@
+local group = AttachedLocations.getGroup("Human")
+group:getOrCreateLocation("helmetlamp"):setAttachmentName("helmetlamp")
+group:getOrCreateLocation("Helmet Left"):setAttachmentName("helmetleft")
+group:getOrCreateLocation("Helmet Right"):setAttachmentName("helmetright")
+group:getOrCreateLocation("Medical Kit Back"):setAttachmentName("medicalpackback")

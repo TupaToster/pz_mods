@@ -1,0 +1,11 @@
+UI_ES = {
+    UI_ModName = "Become Desensitized",
+	UI_MinimumZombieKills = "Mínimo de zombies asesinados",
+    UI_MinimumZombieKillsDesc = "Mínimo de zombies asesinados para obtener una oportunidad de volverte insensible (debe ser menor que la cantidad máxima de zombies asesinados)",
+    UI_MaximumZombieKills = "Máximo de zombies asesinados",
+    UI_MaximumZombieKillsDesc = "Máximo de zombies asesinados para volverte insensible (debe ser mayor que la cantidad mínima de zombies asesinados)",
+    UI_ConsiderTraits = "Considerar rasgos",
+    UI_ConsiderTraitsDesc = "Consider rasgos para aumentar las posibilidades de volverte insensible (mas información en la página de la Workshop)",
+    UI_ConsiderOccupations = "Consider empleos",
+    UI_ConsiderOccupationsDesc = "Considerar los empleos Policía, Bombero, Guardabosques, Guardia de seguridad, Doctor y Enfermero para que aumenten la probabilidad de volverte insensible",
+}

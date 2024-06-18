@@ -1,0 +1,11 @@
+UI_EN = {
+    UI_ModName = "Become Desensitized",
+	UI_MinimumZombieKills = "Minimum Zombie Kills (MUST BE LESS THAN MAXIMUM ZOMBIE KILLS)",
+    UI_MinimumZombieKillsDesc = "Minimum zombie kills required to have a chance to become desensitized",
+    UI_MaximumZombieKills = "Maximum Zombie Kills (MUST BE GREATER THAN MINIMUM ZOMBIE KILLS)",
+    UI_MaximumZombieKillsDesc = "Maximum zombie kills required to become desensitized",
+    UI_ConsiderTraits = "Consider Traits",
+    UI_ConsiderTraitsDesc = "Consider traits that can increase the chance of becoming desensitized (more info in workshop page)",
+    UI_ConsiderOccupations = "Consider Occupations",
+    UI_ConsiderOccupationsDesc = "Consider occupations Police, Fireman, Park Ranger, Security Guard, Doctor and Nurse that can increase the chance of becoming desensitized",
+}

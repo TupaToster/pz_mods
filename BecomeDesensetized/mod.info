@@ -1,0 +1,5 @@
+name=Become Desensitized
+id=BecomeDesensitized
+description=Become Desensitized
+require=modoptions
+poster=poster.png
